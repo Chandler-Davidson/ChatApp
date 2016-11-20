@@ -1,0 +1,8 @@
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\bin\Release\ChatAppServer.exe.config
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\bin\Release\ChatAppServer.exe
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\bin\Release\ChatAppServer.pdb
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\obj\Release\ChatAppServer.ServerForm.resources
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\obj\Release\ChatAppServer.Properties.Resources.resources
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\obj\Release\ChatAppServer.csproj.GenerateResource.Cache
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\obj\Release\ChatAppServer.exe
+C:\Users\Chandler\Downloads\ChatApp\ChatAppServer\obj\Release\ChatAppServer.pdb
