@@ -56,7 +56,7 @@
             this.ConnectedUserTextBox.Size = new System.Drawing.Size(131, 350);
             this.ConnectedUserTextBox.TabIndex = 1;
             this.ConnectedUserTextBox.TabStop = false;
-            this.ConnectedUserTextBox.Text = "";
+            this.ConnectedUserTextBox.Text = "Connected Users: \n";
             // 
             // MessageTextBox
             // 

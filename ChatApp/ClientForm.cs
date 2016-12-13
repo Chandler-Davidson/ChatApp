@@ -65,6 +65,7 @@ namespace ChatApp
         private void ClientForm_Load(object sender, EventArgs e)
         {
             this.displayMessageDelegate = new DisplayMessageDelegate(this.DisplayMessage);
+            ConnectedUserTextBox.AppendText(userName + " (You)" + Environment.NewLine);
         }
         #endregion
 
@@ -87,12 +88,22 @@ namespace ChatApp
 
             Packet receivedData = new Packet(this.dataStream);
 
+            if (receivedData.DataID == MessageType.Login)
+            {
+                ConnectedUserTextBox.AppendText(receivedData.ChatName + Environment.NewLine);
+            }
+
             if (receivedData.ChatMessage != null)
                 this.Invoke(this.displayMessageDelegate, new object[] { receivedData.ChatMessage });
 
             this.dataStream = new byte[1024];
 
             clientSocket.BeginReceiveFrom(this.dataStream, 0, this.dataStream.Length, SocketFlags.None, ref serverEndPoint, new AsyncCallback(this.ReceiveData), null);
+
+            if (!ConnectedUserTextBox.Text.Contains(receivedData.ChatName))
+            {
+                ConnectedUserTextBox.AppendText(receivedData.ChatName + Environment.NewLine);
+            }
         }
         #endregion
 
